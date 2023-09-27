@@ -1,0 +1,340 @@
+:root {
+    --cp-darkred: #8B0032;
+    --cp-white: #fff;
+    --cp-linergrident: linear-gradient(90deg, #8B0032, transparent);
+    --cp-navablue: #000033;
+    --cp-dark-orange:#A07E59;
+}
+
+/* comman css */
+body {
+    color: var(--cp-white);
+    background-color: #000;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cp-btn {
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: var(--cp-darkred);
+}
+
+.cp-btn.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #000000ab;
+    border-color: #8b00328a;
+}
+
+.cp-section {
+    padding: 85px 0px;
+}
+
+.bg-darkred {
+    background-color: var(--cp-darkred);
+}
+
+.bg-navablue {
+    background-color: var(--cp-navablue);
+}
+.bg-dark-orange{
+    background: var(--cp-dark-orange);
+}
+
+.cp-sec-title {
+    color: var(--White, #FFF);
+    text-align: center;
+    
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.cp-sec-title div {
+    color: var(--cp-white);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.cp-sec-sub-title {}
+
+.cp-sec-sub-title div {
+    color: var(--cp-white);
+    font-family: Basic;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    padding: 35px 0px;
+}
+.mt-50{
+    margin-top: 50px !important;
+}
+
+.cp-light-text {
+    font-size: 15px;
+    line-height: 16px;
+}
+
+/* Header naviagation bar */
+header {
+    background-image: linear-gradient(180deg, #000000ad, transparent), url('/assets/img/header-bg.png');
+
+}
+
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.cp-header .nav-link {
+    color: var(--cp-white);
+}
+
+.cp-header .nav-link.active {
+    color: var(--cp-white);
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--cp-darkred);
+}
+
+/* Hero section innner in header */
+.cp-hero {
+    box-shadow: 0px -1.5px 0px 1px var(--cp-darkred);
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    text-align: center;
+}
+
+.cp-hero h1 {
+    font-size: 70px;
+    padding: 100px 100px 33px;
+}
+
+.cp-hero p {
+    color: #FFF;
+    text-align: center;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 35px;
+    /* 140% */
+    padding: 20px 225px;
+}
+
+.cp-hero-inner-desc {
+    margin: 20px 100px;
+    padding: 21px 44px;
+    border-radius: 20px;
+    opacity: 0.6;
+    background: var(--P-color, #000);
+}
+
+.cp-hero-btn {
+    text-align: center;
+    justify-content: center;
+    margin-top: 45px;
+    position: relative;
+}
+
+.cp-hero-btn span {
+    color: var(--cp-white);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 35px; 140% */
+}
+
+.cp-hero-btn .cp-btn svg {
+    height: 50px;
+}
+
+.cp-arrow-btn {
+    padding: 55px 0px;
+}
+
+.cp-hero-btn .arrow.left {
+    /* position: absolute; */
+    left: 18%;
+    top: -40px;
+}
+
+.cp-hero-btn .arrow.right {
+    /* position: absolute; */
+    right: -80px;
+    top: -60px;
+}
+
+/* video sectio */
+#video-section {
+    margin: 0px 2px;
+}
+
+#video-section img {
+    border-radius: 15px;
+    padding:10px;
+}
+
+#video-section .container {
+    max-width: 1000px;
+}
+
+/* team Sport */
+#team-section .cp-hero-btn span {
+    font-size: 20px;
+}
+
+/* <!-- SECRET Result --> */
+#secret-section .slick-slide img {
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+.slider-box{
+    position: relative;
+}
+.slider-bg {
+    position: absolute;
+    text-align: center;
+    width: -webkit-fill-available;
+    background: linear-gradient(350deg, black, #0000005e);
+    height: 100%;
+    bottom: 0px;
+}
+.slider-box p {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    /* z-index: 1; */
+    width: -webkit-fill-available;
+}
+/*  Results */
+#results-section{
+    position: relative;
+    padding: 150px 0px 70px;
+}
+.brig-float {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: -10%;
+    border-radius: 20px;
+    background: var(--Unforgettably-Gold, #A07E59);
+    text-align: center;
+    padding: 20px;
+    margin: 0px 5%;
+}
+.brig-float p{
+    color: var(--cp-white);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: left;
+}
+.brig-float .cp-btn {
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    background: #a07e59;
+}
+.results-box .results-inner  {
+    margin: 0px;
+    border-right: 1px solid;
+    padding: 35px;
+}
+.results-box .results-inner .cp-light-text  {
+    padding-top: 18px;
+}
+.results-box .results-inner:nth-child(3) {
+    margin: 0px;
+    border-right: 0px solid;
+}
+.results-box .results-inner:nth-child(6n) {
+    margin: 0px;
+    border-right: 0px solid;
+}
+.inner-gap{
+    margin-bottom: 125px;
+}
+
+/* Live up */
+#live-up-section img {
+    max-height: 380px;
+}
+.container-shadow{
+    box-shadow: 0px -1.5px 0px 1px var(--cp-darkred);
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-top: 75px;
+}
+
+/* people-say-section */
+#people-say-section .author-text{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.cp-sec-small-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* download-section */
+#download-section img{
+    max-height: 160px;
+    flex-shrink: 0;
+}
+
+.download-container{
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 33px;
+}
+
+
+/* FAQ */
+#faq-section form input{
+    background: no-repeat;
+    color: white;
+    border: 0px;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+}
+#faq-section form input::placeholder{
+    color: var(--cp-white);
+}
+#faq-section form .btn{
+    border: 0px;
+}
+#faq-section .accordion , #faq-section .accordion-item{
+    background-color: var(--cp-navablue);
+    color: var(--cp-white);
+}
+#faq-section .accordion .accordion-body {
+    max-height: 240px;
+    overflow: scroll;
+}
+/* width */
+#faq-section .accordion .accordion-body::-webkit-scrollbar {
+    width: 2px;
+    }
+    
+    /* Track */
+    #faq-section .accordion .accordion-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    width: 10px;
+    height: 5px;
+    }
+    
+    /* Handle */
+    #faq-section .accordion .accordion-body::-webkit-scrollbar-thumb {
+    background: #888;
+    
+    }

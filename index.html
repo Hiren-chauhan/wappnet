@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CATAPULT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css">
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="cp-header">
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg container bg-transparent pb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/img/catapult-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WhyUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">For Institutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">For Teams</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Masterclasses</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <div class=" pe-2">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32Z"
+                                        fill="#8B0032" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.9373 11.8919C19.9373 14.0414 18.171 15.7838 15.9921 15.7838C13.8132 15.7838 12.0469 14.0414 12.0469 11.8919C12.0469 9.74248 13.8132 8 15.9921 8C18.171 8 19.9373 9.74248 19.9373 11.8919ZM8.84143 24.7838C8.84143 20.8879 12.0429 17.7298 15.9921 17.7298C19.9413 17.7298 23.1428 20.8879 23.1428 24.7838H8.84143Z"
+                                        fill="white" />
+                                </svg></span>
+                            <span class="text-white">login</span>
+                        </div>
+                        <div class="ps-2 border-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"
+                                fill="none">
+                                <path
+                                    d="M10.6231 23.1095C10.6815 23.46 11.0127 23.6968 11.3629 23.6384L12.2083 23.4974C12.5586 23.4389 12.7952 23.1075 12.7368 22.757L11.9356 17.946C11.8772 17.5955 11.546 17.3589 11.1957 17.4173L10.3503 17.5583C10.0001 17.6166 9.76346 17.9481 9.82184 18.2986L10.6231 23.1095Z"
+                                    fill="white" />
+                                <path
+                                    d="M17.263 22.757C17.2047 23.1075 17.4413 23.4389 17.7914 23.4974L18.6369 23.6384C18.9871 23.6968 19.3183 23.46 19.3767 23.1095L20.178 18.2979C20.2364 17.9474 19.9998 17.6159 19.6496 17.5575L18.8041 17.4165C18.454 17.3581 18.1227 17.5949 18.0644 17.9454L17.263 22.757Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.754 9.62919H6.99553L13.0431 3.95532C13.3454 3.67181 13.3606 3.19682 13.0773 2.89441L12.6377 2.42507C12.3544 2.12266 11.8798 2.10734 11.5775 2.39085L4.10043 9.40591C4.03044 9.47158 3.97583 9.54751 3.93676 9.62919H2.14284C1.55111 9.62919 1.07141 10.1093 1.07141 10.7014V14.9904C1.07141 15.5825 1.55111 16.0626 2.14284 16.0626H2.5984L4.89216 26.8385C5.01859 27.4325 5.5428 27.8571 6.14965 27.8571H23.8485C24.4553 27.8571 24.9796 27.4325 25.106 26.8385L27.3997 16.0626H27.8571C28.4489 16.0626 28.9286 15.5825 28.9286 14.9904V10.7014C28.9286 10.1093 28.4489 9.62919 27.8571 9.62919H26.0097C25.9651 9.54282 25.9028 9.46373 25.8236 9.39758L17.333 2.31683C17.0148 2.05146 16.5419 2.09449 16.2767 2.41294L15.8652 2.90717C15.6 3.22561 15.6429 3.69889 15.9612 3.96426L22.754 9.62919ZM3.85713 11.7737C3.50209 11.7737 3.21427 12.0617 3.21427 12.417V13.2748C3.21427 13.6301 3.50209 13.9182 3.85713 13.9182H26.1428C26.4979 13.9182 26.7857 13.6301 26.7857 13.2748V12.417C26.7857 12.0617 26.4979 11.7737 26.1428 11.7737H3.85713ZM4.98239 16.9695C4.88299 16.5026 5.23882 16.0626 5.71594 16.0626H24.2822C24.7593 16.0626 25.1151 16.5026 25.0158 16.9695L23.2812 25.1185C23.2074 25.465 22.9017 25.7127 22.5477 25.7127H7.4505C7.0965 25.7127 6.79072 25.465 6.71696 25.1185L4.98239 16.9695Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+        <div class="container">
+            <div class="cp-hero">
+                <h1 class="text-center">Catapult your institution forward faster
+                    <span><svg xmlns="http://www.w3.org/2000/svg" width="68" height="50" viewBox="0 0 68 50"
+                            fill="none">
+                            <path d="M0 0V13.8226L11.1783 25.0006L0 36.1774V50L25 25.0006L0 0Z" fill="white" />
+                            <path d="M21 0V13.8226L32.1783 25.0006L21 36.1774V50L46 25.0006L21 0Z" fill="white" />
+                            <path d="M43 0V13.8226L54.177 25.0006L43 36.1774V50L68 25.0006L43 0Z" fill="white" />
+                        </svg>
+                    </span>
+                </h1>
+                <p class="text-center">Gain supp ort and commitment from your institution to advance and sustain
+                    innovative initiatives.</p>
+
+                <div class="cp-hero-inner-desc">
+                    <span class="text-center">Our professional development masterclasses catapult your institution into
+                        the modern age with top-quality support from influential thought leaders and subject matter
+                        experts, dynamic virtual keynotes, institution-specific coaching calls, a tactical playbook, and
+                        virtual huddles. Integrate strategies and tactics to improve Career Readiness, Work Based
+                        Learning, Instructional Excellence, and Student Recruitment and Marketing programs, and
+                        transform your institution for the modern age.</span>
+                </div>
+
+                <div class="d-flex  cp-hero-btn">
+                    <div class="pe-3 arrow left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="95" height="70" viewBox="0 0 95 70" fill="none">
+                            <path
+                                d="M0.689212 4.22793C7.93905 29.5361 30.649 51.2786 61.4915 55.117C68.9013 56.0397 69.0101 54.095 59.6438 59.3872C55.1767 61.9109 54.157 62.6542 50.3346 64.2183C47.5077 65.3743 49.8368 70.551 51.9366 69.6921C59.2266 66.7109 66.5708 65.9418 91.6274 53.9084C93.6243 52.9497 94.3327 51.0786 94.0901 49.0879C93.006 40.1683 83.3197 45.0074 58.1958 23.0933C56.2985 21.4379 53.5164 22.2495 52.7774 24.588C51.9189 27.3006 52.8956 30.2979 55.0042 32.1974C60.1495 36.826 65.5932 40.8533 71.6294 44.5889C39.6116 45.909 14.9973 28.4193 4.42919 2.38427C3.2695 -0.465486 -0.31909 0.713794 0.689212 4.22793Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                    <button class="btn cp-btn" title="I am ready to Transform my Institution">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path
+                                d="M27 31.5H9C7.80653 31.5 6.66193 31.0259 5.81802 30.182C4.97411 29.3381 4.5 28.1935 4.5 27V9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5H15C15.3978 4.5 15.7794 4.65804 16.0607 4.93934C16.342 5.22064 16.5 5.60218 16.5 6C16.5 6.39782 16.342 6.77936 16.0607 7.06066C15.7794 7.34196 15.3978 7.5 15 7.5H9C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9V27C7.5 27.3978 7.65804 27.7794 7.93934 28.0607C8.22064 28.342 8.60218 28.5 9 28.5H27C27.3978 28.5 27.7794 28.342 28.0607 28.0607C28.342 27.7794 28.5 27.3978 28.5 27V21C28.5 20.6022 28.658 20.2206 28.9393 19.9393C29.2206 19.658 29.6022 19.5 30 19.5C30.3978 19.5 30.7794 19.658 31.0607 19.9393C31.342 20.2206 31.5 20.6022 31.5 21V27C31.5 28.1935 31.0259 29.3381 30.182 30.182C29.3381 31.0259 28.1935 31.5 27 31.5Z"
+                                fill="white" />
+                            <path
+                                d="M31.5 6.07501V13.575C31.4985 13.8711 31.4094 14.1602 31.2439 14.4058C31.0784 14.6514 30.8439 14.8425 30.57 14.955C30.392 15.039 30.1968 15.0801 30 15.075C29.8026 15.0762 29.6069 15.0383 29.4241 14.9637C29.2414 14.889 29.0751 14.779 28.935 14.64L26.175 12L18.99 19.185C18.8505 19.3256 18.6846 19.4372 18.5019 19.5133C18.3191 19.5895 18.123 19.6287 17.925 19.6287C17.727 19.6287 17.5309 19.5895 17.3481 19.5133C17.1653 19.4372 16.9994 19.3256 16.86 19.185C16.7194 19.0456 16.6078 18.8797 16.5317 18.6969C16.4555 18.5141 16.4163 18.318 16.4163 18.12C16.4163 17.922 16.4555 17.7259 16.5317 17.5431C16.6078 17.3604 16.7194 17.1945 16.86 17.055L24 9.82501L21.36 7.14001C21.1443 6.93414 20.9948 6.66863 20.9307 6.37741C20.8665 6.08618 20.8907 5.78245 21 5.50501C21.1196 5.21135 21.3292 4.96315 21.5987 4.79606C21.8682 4.62896 22.1838 4.55158 22.5 4.57501H30C30.1241 4.55345 30.2509 4.55345 30.375 4.57501C30.4444 4.56165 30.5156 4.56165 30.585 4.57501C30.7649 4.64591 30.9284 4.75308 31.0652 4.88984C31.2019 5.02661 31.3091 5.19006 31.38 5.37001C31.3934 5.43937 31.3934 5.51065 31.38 5.58001C31.4583 5.73328 31.4995 5.90287 31.5 6.07501Z"
+                                fill="white" />
+                        </svg>
+                        <span>I am ready to Transform my Institution</span>
+                    </button>
+                </div>
+
+                <div class="cp-arrow-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="49" height="37" viewBox="0 0 49 37" fill="none">
+                        <path d="M46.2293 5.43798L49 0.639648L43.4586 0.639648L46.2293 5.43798Z" fill="white" />
+                        <path d="M37.5375 5.43798L40.3082 0.639648L34.7677 0.639648L37.5375 5.43798Z" fill="white" />
+                        <path d="M28.8458 5.43798L31.6157 0.639648L26.0751 0.639648L28.8458 5.43798Z" fill="white" />
+                        <path d="M20.1541 5.43798L22.9247 0.639648L17.3834 0.639648L20.1541 5.43798Z" fill="white" />
+                        <path d="M11.4631 5.43798L14.233 0.639648L8.69246 0.639648L11.4631 5.43798Z" fill="white" />
+                        <path d="M2.77053 5.43798L5.5412 0.639648L-0.000155926 0.639648L2.77053 5.43798Z"
+                            fill="white" />
+                        <path d="M41.8834 11.623L44.6541 6.82465L39.1136 6.82465L41.8834 11.623Z" fill="white" />
+                        <path d="M33.1925 11.623L35.9623 6.82465L30.4218 6.82465L33.1925 11.623Z" fill="white" />
+                        <path d="M24.4999 11.623L27.2706 6.82465L21.7293 6.82465L24.4999 11.623Z" fill="white" />
+                        <path d="M15.8082 11.623L18.5789 6.82465L13.0383 6.82465L15.8082 11.623Z" fill="white" />
+                        <path d="M7.11727 11.623L9.88794 6.82465L4.34658 6.82465L7.11727 11.623Z" fill="white" />
+                        <path d="M37.5372 17.8065L40.3079 13.0082L34.7674 13.0082L37.5372 17.8065Z" fill="white" />
+                        <path d="M28.8463 17.8065L31.6161 13.0082L26.0756 13.0082L28.8463 17.8065Z" fill="white" />
+                        <path d="M20.1538 17.8065L22.9244 13.0082L17.3831 13.0082L20.1538 17.8065Z" fill="white" />
+                        <path d="M11.4628 17.8065L14.2327 13.0082L8.69215 13.0082L11.4628 17.8065Z" fill="white" />
+                        <path d="M33.1921 23.9911L35.962 19.1919L30.4215 19.1919L33.1921 23.9911Z" fill="white" />
+                        <path d="M24.5004 23.9911L27.2711 19.1919L21.7297 19.1919L24.5004 23.9911Z" fill="white" />
+                        <path d="M15.8078 23.9911L18.5785 19.1919L13.038 19.1919L15.8078 23.9911Z" fill="white" />
+                        <path d="M28.8462 30.1752L31.6161 25.3769L26.0756 25.3769L28.8462 30.1752Z" fill="white" />
+                        <path d="M20.1545 30.1752L22.9252 25.3769L17.3838 25.3769L20.1545 30.1752Z" fill="white" />
+                        <path d="M24.4999 36.3596L27.2706 31.5605L21.7292 31.5605L24.4999 36.3596Z" fill="white" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Video slider -->
+    <section class="cp-section bg-darkred" id="video-section">
+        <div class="">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner container">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="/assets/img/v1-img.png" class="d-block w-100" alt="catapult-samiar">
+                                <div class="cp-play-btn">
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/assets/img/v2-img.png" class="d-block w-100" alt="catapult-samiar">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/assets/img/v3-img.png" class="d-block w-100" alt="catapult-samiar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 72 81" fill="none">
+                            <path
+                                d="M72 73C72 77.4183 68.4183 81 64 81L0 81L7.08124e-06 -6.29444e-06L64 -6.99382e-07C68.4183 -3.13124e-07 72 3.58172 72 8L72 73Z"
+                                fill="#000033" />
+                            <path
+                                d="M43.3362 51.5084C43.7072 51.1215 43.7072 50.511 43.3362 50.1241L34.7703 41.1922C34.3993 40.8053 34.3993 40.1947 34.7703 39.8078L43.3362 30.8759C43.7072 30.489 43.7072 29.8785 43.3362 29.4916L41.6685 27.7526C41.2748 27.3421 40.6186 27.3421 40.225 27.7526L28.6638 39.8078C28.2928 40.1947 28.2928 40.8053 28.6638 41.1922L40.225 53.2474C40.6186 53.6579 41.2748 53.6579 41.6685 53.2474L43.3362 51.5084Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 72 81" fill="none">
+                            <path d="M0 8C0 3.58172 3.58172 0 8 0H72V81H8C3.58172 81 0 77.4183 0 73V8Z"
+                                fill="#000033" />
+                            <path
+                                d="M28.6638 29.4916C28.2928 29.8785 28.2928 30.489 28.6638 30.8759L37.2297 39.8078C37.6007 40.1947 37.6007 40.8053 37.2297 41.1922L28.6638 50.1241C28.2928 50.511 28.2928 51.1215 28.6638 51.5084L30.3315 53.2474C30.7252 53.6579 31.3814 53.6579 31.775 53.2474L43.3362 41.1922C43.7072 40.8053 43.7072 40.1947 43.3362 39.8078L31.775 27.7526C31.3814 27.3421 30.7252 27.3421 30.3315 27.7526L28.6638 29.4916Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="92" height="12" viewBox="0 0 92 12" fill="none">
+                        <circle cx="5.68539" cy="5.68539" r="5.68539" transform="matrix(1 0 0 -1 0 11.6855)"
+                            fill="#D9D9D9" />
+                        <circle cx="5.68539" cy="5.68539" r="5.68539" transform="matrix(1 0 0 -1 20.158 11.6855)"
+                            fill="#D9D9D9" fill-opacity="0.54" />
+                        <circle cx="5.68539" cy="5.68539" r="5.68539" transform="matrix(1 0 0 -1 40.3144 11.6855)"
+                            fill="#D9D9D9" fill-opacity="0.54" />
+                        <circle cx="5.68539" cy="5.68539" r="5.68539" transform="matrix(1 0 0 -1 60.4724 11.6855)"
+                            fill="#D9D9D9" fill-opacity="0.54" />
+                        <circle cx="5.68539" cy="5.68539" r="5.68539" transform="matrix(1 0 0 -1 80.6288 11.6855)"
+                            fill="#D9D9D9" fill-opacity="0.54" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team sport -->
+    <section class="cp-section bg-navablue" id="team-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="/assets/img/team-sport.png" alt="catapult-team">
+                </div>
+                <div class="col-md-6">
+                    <div class="cp-sec-title">
+                        <div>WE BRING THE BEST ONBOARD BECAUSE INSTITUTIONAL CHANGE IS A TEAM SPORT</div>
+                    </div>
+                    <div class="cp-sec-sub-title">
+                        <div>It takes time and intentionality, and no one can advance their institution alone. That is
+                            why we have gathered the best thought leaders, influential voices, and subject matter
+                            experts to provide your institution with both the "WHY" and the "HOW." The strategic
+                            thinking and the tactical structure.</div>
+                    </div>
+
+                    <div class="d-flex  cp-hero-btn">
+
+                        <button class="btn cp-btn" title="I am ready to Transform my Institution">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M27 31.5H9C7.80653 31.5 6.66193 31.0259 5.81802 30.182C4.97411 29.3381 4.5 28.1935 4.5 27V9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5H15C15.3978 4.5 15.7794 4.65804 16.0607 4.93934C16.342 5.22064 16.5 5.60218 16.5 6C16.5 6.39782 16.342 6.77936 16.0607 7.06066C15.7794 7.34196 15.3978 7.5 15 7.5H9C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9V27C7.5 27.3978 7.65804 27.7794 7.93934 28.0607C8.22064 28.342 8.60218 28.5 9 28.5H27C27.3978 28.5 27.7794 28.342 28.0607 28.0607C28.342 27.7794 28.5 27.3978 28.5 27V21C28.5 20.6022 28.658 20.2206 28.9393 19.9393C29.2206 19.658 29.6022 19.5 30 19.5C30.3978 19.5 30.7794 19.658 31.0607 19.9393C31.342 20.2206 31.5 20.6022 31.5 21V27C31.5 28.1935 31.0259 29.3381 30.182 30.182C29.3381 31.0259 28.1935 31.5 27 31.5Z"
+                                    fill="white" />
+                                <path
+                                    d="M31.5 6.07501V13.575C31.4985 13.8711 31.4094 14.1602 31.2439 14.4058C31.0784 14.6514 30.8439 14.8425 30.57 14.955C30.392 15.039 30.1968 15.0801 30 15.075C29.8026 15.0762 29.6069 15.0383 29.4241 14.9637C29.2414 14.889 29.0751 14.779 28.935 14.64L26.175 12L18.99 19.185C18.8505 19.3256 18.6846 19.4372 18.5019 19.5133C18.3191 19.5895 18.123 19.6287 17.925 19.6287C17.727 19.6287 17.5309 19.5895 17.3481 19.5133C17.1653 19.4372 16.9994 19.3256 16.86 19.185C16.7194 19.0456 16.6078 18.8797 16.5317 18.6969C16.4555 18.5141 16.4163 18.318 16.4163 18.12C16.4163 17.922 16.4555 17.7259 16.5317 17.5431C16.6078 17.3604 16.7194 17.1945 16.86 17.055L24 9.82501L21.36 7.14001C21.1443 6.93414 20.9948 6.66863 20.9307 6.37741C20.8665 6.08618 20.8907 5.78245 21 5.50501C21.1196 5.21135 21.3292 4.96315 21.5987 4.79606C21.8682 4.62896 22.1838 4.55158 22.5 4.57501H30C30.1241 4.55345 30.2509 4.55345 30.375 4.57501C30.4444 4.56165 30.5156 4.56165 30.585 4.57501C30.7649 4.64591 30.9284 4.75308 31.0652 4.88984C31.2019 5.02661 31.3091 5.19006 31.38 5.37001C31.3934 5.43937 31.3934 5.51065 31.38 5.58001C31.4583 5.73328 31.4995 5.90287 31.5 6.07501Z"
+                                    fill="white" />
+                            </svg>
+                            <span>I am ready to Transform my Institution</span>
+                        </button>
+                        <div class="pe-3 arrow right">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="81" height="65" viewBox="0 0 81 111"
+                                fill="none">
+                                <path
+                                    d="M53.3507 0.782089C61.2095 5.14392 66.7591 11.9339 71.3903 19.4228C76.9886 28.4809 79.5002 38.5366 80.1757 49.189C80.8331 59.7092 77.4741 68.4745 70.1178 75.8978C58.6264 87.4795 44.8814 94.6351 28.7824 97.2979C26.1567 97.7343 23.5565 98.2574 20.951 98.7689C20.7838 98.8029 20.6601 99.0559 20.1544 99.5811C25.1526 102.505 30.0726 105.38 34.9977 108.267C34.8847 108.698 34.777 109.14 34.664 109.571C33.6745 109.867 32.4599 110.687 31.7157 110.379C22.0705 106.353 12.4443 102.276 2.93018 97.9506C0.362952 96.7867 0.208421 94.7493 2.06258 92.4019C3.07058 91.1281 4.52331 90.2139 5.55354 88.9581C7.4712 86.5958 9.18342 84.0601 11.0344 81.6438C12.7288 79.4393 14.4899 77.2888 16.434 74.8302C18.285 78.6808 17.9872 79.9404 13.2246 90.4687C14.7402 90.4955 16.04 90.6345 17.3037 90.509C31.7809 89.1604 45.5585 85.8119 57.5784 76.9966C73.2971 65.4719 77.1625 57.5721 73.1948 35.5192C70.9741 23.1391 63.9074 13.3864 55.3943 4.53096C54.4571 3.55243 53.4374 2.63955 52.4473 1.69915C52.7446 1.39524 53.0534 1.086 53.3507 0.782089Z"
+                                    fill="#A07E59" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECRET Result -->
+    <section class="cp-section bg-black" id="secret-section">
+        <div class="">
+            <div class="cp-sec-title">THE SECRET TO CATAPULT RESULTS</div>
+            <div class="slick-carousel mt-5">
+                <!-- Inside the containing div, add one div for each slide -->
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+            </div>
+            <div class="slick-carousel mt-5">
+                <!-- Inside the containing div, add one div for each slide -->
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+                <div class="slider-box">
+                    <img src="/assets/img/avatar-2.png">
+                    <div class="slider-bg"></div>
+                    <p class="mb-0">Kristy Volesky</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results -->
+    <section class="cp-section bg-darkred" id="results-section">
+        <div class="brig-float">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <p>Bring everyone onboard
+                        to transform your institution forward faster!</p>
+                </div>
+                <div class="col-md-2">
+                    <div class="me-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="28" viewBox="0 0 100 28"
+                            fill="none">
+                            <path
+                                d="M0.0649619 17.6442C0.998162 15.7105 2.76785 15.7625 4.22938 15.5425C12.6279 14.3197 21.0185 12.7969 29.4733 12.1145C46.7432 10.7322 64.0398 9.82004 81.3277 8.70785C82.7284 8.6174 84.1294 8.47695 85.5823 8.05684C79.6384 5.67627 73.2659 4.54281 67.4025 2.09279C67.4956 1.63341 67.5788 1.17396 67.6719 0.714589C68.8124 0.652361 70.0046 0.330487 71.0831 0.557844C79.7111 2.3467 88.3389 4.16554 96.9356 6.13419C100.121 6.86591 100.747 8.91023 98.5298 11.3952C96.8368 13.2937 94.8453 14.9801 92.785 16.4861C88.3831 19.6862 83.8819 22.7756 79.3413 25.7847C76.3176 27.7841 75.9577 27.7617 72.05 27.4151C76.0131 21.1019 83.067 19.09 88.1415 14.0444C86.8525 13.8956 85.8643 13.6289 84.8939 13.6923C58.313 15.1911 31.732 16.72 5.15123 18.2088C3.53058 18.2978 1.75544 19.0457 0.0649619 17.6442Z"
+                                fill="white" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <button class="btn cp-btn" title="I am ready to Transform my Institution">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                            fill="none">
+                            <path
+                                d="M27 31.5H9C7.80653 31.5 6.66193 31.0259 5.81802 30.182C4.97411 29.3381 4.5 28.1935 4.5 27V9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5H15C15.3978 4.5 15.7794 4.65804 16.0607 4.93934C16.342 5.22064 16.5 5.60218 16.5 6C16.5 6.39782 16.342 6.77936 16.0607 7.06066C15.7794 7.34196 15.3978 7.5 15 7.5H9C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9V27C7.5 27.3978 7.65804 27.7794 7.93934 28.0607C8.22064 28.342 8.60218 28.5 9 28.5H27C27.3978 28.5 27.7794 28.342 28.0607 28.0607C28.342 27.7794 28.5 27.3978 28.5 27V21C28.5 20.6022 28.658 20.2206 28.9393 19.9393C29.2206 19.658 29.6022 19.5 30 19.5C30.3978 19.5 30.7794 19.658 31.0607 19.9393C31.342 20.2206 31.5 20.6022 31.5 21V27C31.5 28.1935 31.0259 29.3381 30.182 30.182C29.3381 31.0259 28.1935 31.5 27 31.5Z"
+                                fill="white" />
+                            <path
+                                d="M31.5 6.07501V13.575C31.4985 13.8711 31.4094 14.1602 31.2439 14.4058C31.0784 14.6514 30.8439 14.8425 30.57 14.955C30.392 15.039 30.1968 15.0801 30 15.075C29.8026 15.0762 29.6069 15.0383 29.4241 14.9637C29.2414 14.889 29.0751 14.779 28.935 14.64L26.175 12L18.99 19.185C18.8505 19.3256 18.6846 19.4372 18.5019 19.5133C18.3191 19.5895 18.123 19.6287 17.925 19.6287C17.727 19.6287 17.5309 19.5895 17.3481 19.5133C17.1653 19.4372 16.9994 19.3256 16.86 19.185C16.7194 19.0456 16.6078 18.8797 16.5317 18.6969C16.4555 18.5141 16.4163 18.318 16.4163 18.12C16.4163 17.922 16.4555 17.7259 16.5317 17.5431C16.6078 17.3604 16.7194 17.1945 16.86 17.055L24 9.82501L21.36 7.14001C21.1443 6.93414 20.9948 6.66863 20.9307 6.37741C20.8665 6.08618 20.8907 5.78245 21 5.50501C21.1196 5.21135 21.3292 4.96315 21.5987 4.79606C21.8682 4.62896 22.1838 4.55158 22.5 4.57501H30C30.1241 4.55345 30.2509 4.55345 30.375 4.57501C30.4444 4.56165 30.5156 4.56165 30.585 4.57501C30.7649 4.64591 30.9284 4.75308 31.0652 4.88984C31.2019 5.02661 31.3091 5.19006 31.38 5.37001C31.3934 5.43937 31.3934 5.51065 31.38 5.58001C31.4583 5.73328 31.4995 5.90287 31.5 6.07501Z"
+                                fill="white" />
+                        </svg>
+                        I am ready to Transform my Institution
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row inner-gap">
+                <div class="col-md-3">
+                    <p class="mb-0 h1">
+                        Results
+                    </p>
+                </div>
+                <div class="col-md-9">
+                    <p class="mb-0">It takes time and intentionality, and no one can advance their institution alone. That is why we have gathered the best thought leaders, influential voices, and subject matter experts to provide your institution with both the "WHY" and the "HOW." The strategic thinking and the tactical structure.</p>
+                </div>
+            </div>
+
+            <div class="row mt-50 results-box">
+                <div class="col-md-4 results-inner border-bottom">
+                    <p class="h2">99%</p>
+                    <p class="cp-light-text">of educators/staff found Catapult’s content motivational and engaging.</p>
+                </div>
+                <div class="col-md-4 results-inner border-bottom">
+                    <p class="h2">96.3%</p>
+                    <p class="cp-light-text">of educators/staff found Catapult’s content useful in crafting their local strategies/tactics.</p>
+                </div>
+                <div class="col-md-4 results-inner border-bottom">
+                    <p class="h2">97.1%</p>
+                    <p class="cp-light-text">of educators/staff found Catapult’s content useful in crafting their local strategies/tactics.</p>
+                </div>
+                <div class="col-md-4 results-inner">
+                    <p class="h2">90.8%</p>
+                    <p class="cp-light-text">of educators/staff say Catapult helped to transform passive support into active commitment at their institution resulting in broader understanding and buy-in.</p>
+                </div>
+                <div class="col-md-4 results-inner">
+                    <p class="h2">98%</p>
+                    <p class="cp-light-text">of participating educators/staff were thankful for the time and space created to reflect, discuss, and engage together.</p>
+                </div>
+                <div class="col-md-4 results-inner">
+                    <p class="h2">95.9%</p>
+                    <p class="cp-light-text">of educators/staff highly recommend Catapult.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mt-50 text-center">
+                    <button class="btn cp-btn" title="I am ready to Transform my Institution">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                            fill="none">
+                            <path
+                                d="M27 31.5H9C7.80653 31.5 6.66193 31.0259 5.81802 30.182C4.97411 29.3381 4.5 28.1935 4.5 27V9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5H15C15.3978 4.5 15.7794 4.65804 16.0607 4.93934C16.342 5.22064 16.5 5.60218 16.5 6C16.5 6.39782 16.342 6.77936 16.0607 7.06066C15.7794 7.34196 15.3978 7.5 15 7.5H9C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9V27C7.5 27.3978 7.65804 27.7794 7.93934 28.0607C8.22064 28.342 8.60218 28.5 9 28.5H27C27.3978 28.5 27.7794 28.342 28.0607 28.0607C28.342 27.7794 28.5 27.3978 28.5 27V21C28.5 20.6022 28.658 20.2206 28.9393 19.9393C29.2206 19.658 29.6022 19.5 30 19.5C30.3978 19.5 30.7794 19.658 31.0607 19.9393C31.342 20.2206 31.5 20.6022 31.5 21V27C31.5 28.1935 31.0259 29.3381 30.182 30.182C29.3381 31.0259 28.1935 31.5 27 31.5Z"
+                                fill="white" />
+                            <path
+                                d="M31.5 6.07501V13.575C31.4985 13.8711 31.4094 14.1602 31.2439 14.4058C31.0784 14.6514 30.8439 14.8425 30.57 14.955C30.392 15.039 30.1968 15.0801 30 15.075C29.8026 15.0762 29.6069 15.0383 29.4241 14.9637C29.2414 14.889 29.0751 14.779 28.935 14.64L26.175 12L18.99 19.185C18.8505 19.3256 18.6846 19.4372 18.5019 19.5133C18.3191 19.5895 18.123 19.6287 17.925 19.6287C17.727 19.6287 17.5309 19.5895 17.3481 19.5133C17.1653 19.4372 16.9994 19.3256 16.86 19.185C16.7194 19.0456 16.6078 18.8797 16.5317 18.6969C16.4555 18.5141 16.4163 18.318 16.4163 18.12C16.4163 17.922 16.4555 17.7259 16.5317 17.5431C16.6078 17.3604 16.7194 17.1945 16.86 17.055L24 9.82501L21.36 7.14001C21.1443 6.93414 20.9948 6.66863 20.9307 6.37741C20.8665 6.08618 20.8907 5.78245 21 5.50501C21.1196 5.21135 21.3292 4.96315 21.5987 4.79606C21.8682 4.62896 22.1838 4.55158 22.5 4.57501H30C30.1241 4.55345 30.2509 4.55345 30.375 4.57501C30.4444 4.56165 30.5156 4.56165 30.585 4.57501C30.7649 4.64591 30.9284 4.75308 31.0652 4.88984C31.2019 5.02661 31.3091 5.19006 31.38 5.37001C31.3934 5.43937 31.3934 5.51065 31.38 5.58001C31.4583 5.73328 31.4995 5.90287 31.5 6.07501Z"
+                                fill="white" />
+                        </svg>
+                        I am ready to Transform my Institution
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE VIP -->
+    <section class="cp-section bg-black pb-0" id="live-up-section">
+        <div class="container">
+            <div class="row container-shadow">
+                <div class="col-md-6 text-center">
+                    <img src="/assets/img/result-img.png" alt="catapult-result">
+                </div>
+                <div class="col-md-6">
+                    <p class="cp-sec-title text-center mb-5">
+                        LIVE VIP BRIEFING
+                    </p>
+                    <p class="cp-sec-sub-title text-center mb-4">
+                        Get your questions answered live with Dr. Kevin J Fleming and find out how to
+                    </p>
+
+                    <div class="text-center mt-5">
+                       <span class="bg-dark-orange p-3 ps-5 pe-5 rounded h5"> Catapult your institution forward, faster.</span>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <button class="btn cp-btn mt-" title="I am ready to Transform my Institution">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M27 31.5H9C7.80653 31.5 6.66193 31.0259 5.81802 30.182C4.97411 29.3381 4.5 28.1935 4.5 27V9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5H15C15.3978 4.5 15.7794 4.65804 16.0607 4.93934C16.342 5.22064 16.5 5.60218 16.5 6C16.5 6.39782 16.342 6.77936 16.0607 7.06066C15.7794 7.34196 15.3978 7.5 15 7.5H9C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9V27C7.5 27.3978 7.65804 27.7794 7.93934 28.0607C8.22064 28.342 8.60218 28.5 9 28.5H27C27.3978 28.5 27.7794 28.342 28.0607 28.0607C28.342 27.7794 28.5 27.3978 28.5 27V21C28.5 20.6022 28.658 20.2206 28.9393 19.9393C29.2206 19.658 29.6022 19.5 30 19.5C30.3978 19.5 30.7794 19.658 31.0607 19.9393C31.342 20.2206 31.5 20.6022 31.5 21V27C31.5 28.1935 31.0259 29.3381 30.182 30.182C29.3381 31.0259 28.1935 31.5 27 31.5Z"
+                                    fill="white" />
+                                <path
+                                    d="M31.5 6.07501V13.575C31.4985 13.8711 31.4094 14.1602 31.2439 14.4058C31.0784 14.6514 30.8439 14.8425 30.57 14.955C30.392 15.039 30.1968 15.0801 30 15.075C29.8026 15.0762 29.6069 15.0383 29.4241 14.9637C29.2414 14.889 29.0751 14.779 28.935 14.64L26.175 12L18.99 19.185C18.8505 19.3256 18.6846 19.4372 18.5019 19.5133C18.3191 19.5895 18.123 19.6287 17.925 19.6287C17.727 19.6287 17.5309 19.5895 17.3481 19.5133C17.1653 19.4372 16.9994 19.3256 16.86 19.185C16.7194 19.0456 16.6078 18.8797 16.5317 18.6969C16.4555 18.5141 16.4163 18.318 16.4163 18.12C16.4163 17.922 16.4555 17.7259 16.5317 17.5431C16.6078 17.3604 16.7194 17.1945 16.86 17.055L24 9.82501L21.36 7.14001C21.1443 6.93414 20.9948 6.66863 20.9307 6.37741C20.8665 6.08618 20.8907 5.78245 21 5.50501C21.1196 5.21135 21.3292 4.96315 21.5987 4.79606C21.8682 4.62896 22.1838 4.55158 22.5 4.57501H30C30.1241 4.55345 30.2509 4.55345 30.375 4.57501C30.4444 4.56165 30.5156 4.56165 30.585 4.57501C30.7649 4.64591 30.9284 4.75308 31.0652 4.88984C31.2019 5.02661 31.3091 5.19006 31.38 5.37001C31.3934 5.43937 31.3934 5.51065 31.38 5.58001C31.4583 5.73328 31.4995 5.90287 31.5 6.07501Z"
+                                    fill="white" />
+                            </svg>
+                            I am ready to Transform my Institution
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- people say -->
+    <section class="cp-section bg-navablue" id="people-say-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <p class="cp-sec-title text-start mb-5">What people say</p>
+
+                    <div class="card-container">
+                        <div class="card bg-dark-orange text-white" >
+                            <div class="card-body">
+                              <h5 class="card-title text-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M47.6288 23.9232C48.8602 20.8159 50.8066 17.7397 53.4131 14.7789C54.2426 13.8368 54.3479 12.4919 53.675 11.4326C53.1568 10.6178 52.2852 10.1536 51.3623 10.1536C51.1023 10.1536 50.8377 10.1903 50.5768 10.2663C45.0525 11.8803 32.1665 17.6134 31.8204 35.9385C31.6867 43.0147 36.8622 49.0938 43.6014 49.7786C47.3157 50.1503 51.0318 48.9436 53.7857 46.4543C56.5433 43.9622 58.1253 40.4045 58.1253 36.692C58.1253 30.4985 53.729 25.0822 47.6288 23.9232ZM51.2717 43.672C49.5203 45.255 47.3157 46.0982 44.9784 46.0982C44.6479 46.0982 44.3146 46.0817 43.9804 46.0469C39.1675 45.5589 35.4733 41.1498 35.5704 36.01C35.8093 23.3299 42.6749 17.6216 48.3603 15.0682C46.5613 17.5017 45.1477 20.0047 44.1425 22.5417C43.7507 23.5295 43.8156 24.6336 44.3201 25.5711C44.8484 26.5544 45.7904 27.252 46.9028 27.4855C51.2333 28.391 54.3753 32.2636 54.3753 36.6921C54.3753 39.3452 53.2438 41.8895 51.2717 43.672Z" fill="white"/>
+                                <path d="M23.7308 11.4323C23.2126 10.6175 22.341 10.1533 21.4182 10.1533C21.1582 10.1533 20.8945 10.1899 20.6326 10.2659C15.1084 11.88 2.22322 17.613 1.87715 35.9382C1.74532 43.0143 6.91987 49.0934 13.66 49.7782C17.3789 50.1563 21.0886 48.9442 23.8425 46.4539C26.6 43.9619 28.1821 40.4041 28.1821 36.6917C28.1821 30.4981 23.7857 25.0819 17.6865 23.9228C18.9188 20.8128 20.8652 17.7366 23.4708 14.7776C24.3003 13.8346 24.4046 12.4906 23.7308 11.4323ZM14.2002 22.5395C13.8083 23.5273 13.8724 24.6314 14.376 25.5689C14.9051 26.5531 15.8463 27.2508 16.9596 27.4851C21.29 28.3906 24.4321 32.2633 24.4321 36.6917C24.4321 39.3458 23.3005 41.8891 21.3285 43.6717C19.578 45.2546 17.3734 46.0978 15.0351 46.0978C14.7055 46.0978 14.3723 46.0813 14.0372 46.0466C9.22518 45.5586 5.53012 41.1494 5.62717 36.0096C5.8652 23.3287 12.7317 17.6213 18.4171 15.0679C16.619 17.4995 15.2072 20.0025 14.2002 22.5395Z" fill="white"/>
+                              </svg></h5>
+                              <p class="card-text">The higher education sector requires a fundamental rethink as students’ needs shift and digital ecosystems for learning and knowledge creation emerge.
+                                Education Institutions must take a “future-back” approach to ensure that the priorities and actions of today will put them on a growth trajectory for the next decade.</p>
+                              <p class="card-text author-text">~  Catherine Friday EY Global Education Leader</p>
+                            </div>
+                        </div>
+                        <div class="card bg-dark-orange text-white mt-4" >
+                            <div class="card-body">
+                              <h5 class="card-title text-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                <path d="M47.6288 23.9232C48.8602 20.8159 50.8066 17.7397 53.4131 14.7789C54.2426 13.8368 54.3479 12.4919 53.675 11.4326C53.1568 10.6178 52.2852 10.1536 51.3623 10.1536C51.1023 10.1536 50.8377 10.1903 50.5768 10.2663C45.0525 11.8803 32.1665 17.6134 31.8204 35.9385C31.6867 43.0147 36.8622 49.0938 43.6014 49.7786C47.3157 50.1503 51.0318 48.9436 53.7857 46.4543C56.5433 43.9622 58.1253 40.4045 58.1253 36.692C58.1253 30.4985 53.729 25.0822 47.6288 23.9232ZM51.2717 43.672C49.5203 45.255 47.3157 46.0982 44.9784 46.0982C44.6479 46.0982 44.3146 46.0817 43.9804 46.0469C39.1675 45.5589 35.4733 41.1498 35.5704 36.01C35.8093 23.3299 42.6749 17.6216 48.3603 15.0682C46.5613 17.5017 45.1477 20.0047 44.1425 22.5417C43.7507 23.5295 43.8156 24.6336 44.3201 25.5711C44.8484 26.5544 45.7904 27.252 46.9028 27.4855C51.2333 28.391 54.3753 32.2636 54.3753 36.6921C54.3753 39.3452 53.2438 41.8895 51.2717 43.672Z" fill="white"/>
+                                <path d="M23.7308 11.4323C23.2126 10.6175 22.341 10.1533 21.4182 10.1533C21.1582 10.1533 20.8945 10.1899 20.6326 10.2659C15.1084 11.88 2.22322 17.613 1.87715 35.9382C1.74532 43.0143 6.91987 49.0934 13.66 49.7782C17.3789 50.1563 21.0886 48.9442 23.8425 46.4539C26.6 43.9619 28.1821 40.4041 28.1821 36.6917C28.1821 30.4981 23.7857 25.0819 17.6865 23.9228C18.9188 20.8128 20.8652 17.7366 23.4708 14.7776C24.3003 13.8346 24.4046 12.4906 23.7308 11.4323ZM14.2002 22.5395C13.8083 23.5273 13.8724 24.6314 14.376 25.5689C14.9051 26.5531 15.8463 27.2508 16.9596 27.4851C21.29 28.3906 24.4321 32.2633 24.4321 36.6917C24.4321 39.3458 23.3005 41.8891 21.3285 43.6717C19.578 45.2546 17.3734 46.0978 15.0351 46.0978C14.7055 46.0978 14.3723 46.0813 14.0372 46.0466C9.22518 45.5586 5.53012 41.1494 5.62717 36.0096C5.8652 23.3287 12.7317 17.6213 18.4171 15.0679C16.619 17.4995 15.2072 20.0025 14.2002 22.5395Z" fill="white"/>
+                              </svg></h5>
+                              <p class="card-text">Higher education is a very insular world, and it needs transforming.</p>
+                              <p class="card-text author-text">~  Bryan Garvey, VP of HR Virginia Tech, US</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5">
+                    <button class="btn cp-btn mt-" title="I am ready to Transform my Institution">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
+                                fill="none">
+                                <path
+                                    d="M27 31.5H9C7.80653 31.5 6.66193 31.0259 5.81802 30.182C4.97411 29.3381 4.5 28.1935 4.5 27V9C4.5 7.80653 4.97411 6.66193 5.81802 5.81802C6.66193 4.97411 7.80653 4.5 9 4.5H15C15.3978 4.5 15.7794 4.65804 16.0607 4.93934C16.342 5.22064 16.5 5.60218 16.5 6C16.5 6.39782 16.342 6.77936 16.0607 7.06066C15.7794 7.34196 15.3978 7.5 15 7.5H9C8.60218 7.5 8.22064 7.65804 7.93934 7.93934C7.65804 8.22064 7.5 8.60218 7.5 9V27C7.5 27.3978 7.65804 27.7794 7.93934 28.0607C8.22064 28.342 8.60218 28.5 9 28.5H27C27.3978 28.5 27.7794 28.342 28.0607 28.0607C28.342 27.7794 28.5 27.3978 28.5 27V21C28.5 20.6022 28.658 20.2206 28.9393 19.9393C29.2206 19.658 29.6022 19.5 30 19.5C30.3978 19.5 30.7794 19.658 31.0607 19.9393C31.342 20.2206 31.5 20.6022 31.5 21V27C31.5 28.1935 31.0259 29.3381 30.182 30.182C29.3381 31.0259 28.1935 31.5 27 31.5Z"
+                                    fill="white" />
+                                <path
+                                    d="M31.5 6.07501V13.575C31.4985 13.8711 31.4094 14.1602 31.2439 14.4058C31.0784 14.6514 30.8439 14.8425 30.57 14.955C30.392 15.039 30.1968 15.0801 30 15.075C29.8026 15.0762 29.6069 15.0383 29.4241 14.9637C29.2414 14.889 29.0751 14.779 28.935 14.64L26.175 12L18.99 19.185C18.8505 19.3256 18.6846 19.4372 18.5019 19.5133C18.3191 19.5895 18.123 19.6287 17.925 19.6287C17.727 19.6287 17.5309 19.5895 17.3481 19.5133C17.1653 19.4372 16.9994 19.3256 16.86 19.185C16.7194 19.0456 16.6078 18.8797 16.5317 18.6969C16.4555 18.5141 16.4163 18.318 16.4163 18.12C16.4163 17.922 16.4555 17.7259 16.5317 17.5431C16.6078 17.3604 16.7194 17.1945 16.86 17.055L24 9.82501L21.36 7.14001C21.1443 6.93414 20.9948 6.66863 20.9307 6.37741C20.8665 6.08618 20.8907 5.78245 21 5.50501C21.1196 5.21135 21.3292 4.96315 21.5987 4.79606C21.8682 4.62896 22.1838 4.55158 22.5 4.57501H30C30.1241 4.55345 30.2509 4.55345 30.375 4.57501C30.4444 4.56165 30.5156 4.56165 30.585 4.57501C30.7649 4.64591 30.9284 4.75308 31.0652 4.88984C31.2019 5.02661 31.3091 5.19006 31.38 5.37001C31.3934 5.43937 31.3934 5.51065 31.38 5.58001C31.4583 5.73328 31.4995 5.90287 31.5 6.07501Z"
+                                    fill="white" />
+                            </svg>
+                            I am ready to Transform my Institution
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cp-section bg-black" id="download-section">
+        <div class="container">
+            <div class="row bg-darkred download-container align-items-center">
+                <div class="col-md-4">
+                    <img src="/assets/img/d1.png" alt="catapult-download">
+                </div>
+                <div class="col-md-4">
+                    <p class="cp-sec-small-title">Contract for Workshops 
+                        and Seminars</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button class="btn cp-btn text-white mt-3" title="I am ready to Transform my Institution">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path d="M31.5 22.5V28.5C31.5 29.2956 31.1839 30.0587 30.6213 30.6213C30.0587 31.1839 29.2956 31.5 28.5 31.5H7.5C6.70435 31.5 5.94129 31.1839 5.37868 30.6213C4.81607 30.0587 4.5 29.2956 4.5 28.5V22.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 15L18 22.5L25.5 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 22.5V4.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div class="row bg-darkred download-container align-items-center">
+                <div class="col-md-4">
+                    <img src="/assets/img/d2.png" alt="catapult-download">
+                </div>
+                <div class="col-md-4">
+                    <p class="cp-sec-small-title">Download Catapult Flyer 2023</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button class="btn cp-btn text-white mt-3" title="I am ready to Transform my Institution">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path d="M31.5 22.5V28.5C31.5 29.2956 31.1839 30.0587 30.6213 30.6213C30.0587 31.1839 29.2956 31.5 28.5 31.5H7.5C6.70435 31.5 5.94129 31.1839 5.37868 30.6213C4.81607 30.0587 4.5 29.2956 4.5 28.5V22.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 15L18 22.5L25.5 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 22.5V4.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        Download
+                    </button>
+                </div>
+            </div>
+            <div class="row bg-darkred download-container align-items-center">
+                <div class="col-md-4">
+                    <img src="/assets/img/d3.png" alt="catapult-download">
+                </div>
+                <div class="col-md-4">
+                    <p class="cp-sec-small-title">Download Catapult Prospectus 2023</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button class="btn cp-btn text-white mt-3" title="I am ready to Transform my Institution">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                            <path d="M31.5 22.5V28.5C31.5 29.2956 31.1839 30.0587 30.6213 30.6213C30.0587 31.1839 29.2956 31.5 28.5 31.5H7.5C6.70435 31.5 5.94129 31.1839 5.37868 30.6213C4.81607 30.0587 4.5 29.2956 4.5 28.5V22.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 15L18 22.5L25.5 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 22.5V4.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="cp-section bg-navablue" id="faq-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <p class="cp-sec-title text-start">FAQ</p>
+                </div>
+                <div class="col-md-4">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success p-1" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 40 40" fill="none">
+                            <path d="M18.3333 31.6667C25.6971 31.6667 31.6667 25.6971 31.6667 18.3333C31.6667 10.9695 25.6971 5 18.3333 5C10.9695 5 5 10.9695 5 18.3333C5 25.6971 10.9695 31.6667 18.3333 31.6667Z" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M35 35L27.75 27.75" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></button>
+                      </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                What is Catapult's Mission?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Dissatisfied with the status quo, our mission is to ignite a tipping point within schools and colleges resulting in broader buy-in, increased commitment, and systemic change. Our commitment to redefining professional development is rooted in a deep understanding of change management and the challenges facing education today.</p>
+
+                                <p>We believe that you have the potential to be a catalyst for positive change, while also acknowledging we are never a prophet in our own land.</p>
+
+                                <p>We believe that every educator, administrator, and support staff member deserves access to high-quality professional learning opportunities that inspire growth and advance true student success.</p>
+
+                                <p>To be effective, we believe professional development should not be one-and-done. We believe that shared experiences, over time, are critical to advancing local dialog and institutional planning.</p>
+
+                                <p>Through hybrid-flexible learning, dynamic speakers, follow-up coaching, and collaborative planning, we are revolutionizing the way educators engage in professional development. Our approach is designed to be flexible, personalized, and relevant to the unique needs of each individual and educational community we serve.</p>
+
+                                <p>We amplify your message to create a brighter future for all learners.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Accordion Item #2
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Accordion Item #3
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<!-- jQuery CDN -->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- slick Carousel CDN -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.slick-carousel').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 6,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+
+</script>
+
+</html>
